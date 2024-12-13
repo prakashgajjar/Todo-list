@@ -10,10 +10,6 @@ This is a simple To-Do List application built with HTML, CSS (TailwindCSS), and 
 
 - [Technologies Used](#technologies-used)
 - [Features](#features)
-- [Setup](#setup)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ---
 
