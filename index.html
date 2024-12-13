@@ -1,0 +1,233 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="ToDoList.css" rel="stylesheet">
+</head>
+
+<body class=" text-white">
+    <div id="parent01" class="flex overflow-hidden h-screen">
+        <div id="child1" class=" w-80 h-full ml-2">
+
+            <div class="ml-3 flex mt-1">
+                <img class="h-[14px] mr-1 mt-1" src="Images/icon/icons8-microsoft-to-do-app-48.png" alt="To Do">
+                <h1 id="header" class="text-white font-mono text-sm ml-3">To Do List</h1>
+            </div>
+
+            <div id="child11" class="h-16 mt-2 mb-2 border-2  text-white rounded-md flex justify-center items-center">
+                <div class="w-20 -ml-6">
+                    <img class="h-14 rounded-full" src="Images/prakash1.jpg" alt="Profile" />
+                </div>
+                <div id="name" class="font-sans -ml-2 ">
+                    <h1 class="text-lg font-bold">Prakash Suthar</h1>
+                    <h1 class="text-xs -mt-1">prakashgajjar096@gmail.com</h1>
+                </div>
+            </div>
+
+            <div id="child12">
+                <div class="mt-1 ml-2 mr-2">
+                    <div id="search1" class="w-full rounded-md  p-2 focus:outline-none h-8 flex">
+
+                        <input type="text"
+                            class=" w-full bg-transparent text-white placeholder-gray-500 focus:outline-none "
+                            placeholder="Search..." />
+                        <i class="fas fa-search icon flex justify-end"></i>
+                    </div>
+                </div>
+
+                <div id="child13">
+                    <div id="text01"
+                        class="flex mt-7 ml-2 mr-2 bg-gray-700 hover:bg-gray-700 rounded-sm h-7 items-center">
+                        <i class="fas fa-sun icon "></i>
+                        <h1 class="ml-3">My Day</h1>
+                    </div>
+                    <div id="text02" class="flex mt-2 ml-2 mr-2 hover:bg-gray-700 rounded-sm h-7 items-center">
+                        <i class="fas fa-star icon "></i>
+                        <h1 class="ml-3">Important</h1>
+                    </div>
+                    <div id="text03" class="flex mt-2 ml-2 mr-2 hover:bg-gray-700 rounded-sm h-7 items-center">
+                        <i class="fas fa-user icon "></i>
+                        <h1 class="ml-3">Assigned to me</h1>
+                    </div>
+                    <div id="text04" class="flex mt-2 ml-2 mr-2 hover:bg-gray-700 rounded-sm h-7 items-center">
+                        <i class="fas fa-home icon "></i>
+                        <h1 class="ml-3">Task</h1>
+                    </div>
+                    <div id="text05" class="flex mt-2 ml-2 mr-2 hover:bg-gray-700 rounded-sm h-7  items-center">
+                        <i id="icon01" class="fa-solid fa-check"></i>
+                        <h1 class="ml-3 ">Completed Task</h1>
+                    </div>
+                </div>
+
+                <hr id="hr" class="mt-5">
+
+                <div id="child14" class="h-72 overflow-y-auto scroll-auto">
+                    <div class="flex mt-5 ml-2 mr-2 hover:bg-gray-700 rounded-sm h-7">
+                        <i class="fas fa-file-alt icon flex justify-center items-center"></i>
+                        <h1 class="ml-3">Project Ideas</h1>
+                    </div>
+                    <div class="flex mt-2 ml-2 mr-2 hover:bg-gray-700 rounded-sm h-7">
+                        <i class="fas fa-fire icon flex justify-center items-center"></i>
+                        <h1 class="ml-3">Goal 2025</h1>
+                    </div>
+                </div>
+
+                <div id="child154" class=" ">
+                    <div id="child155"
+                        class="  flex items-center w-52 h-7 ml-3 bg-gray-600 rounded-md bg-opacity-10 backdrop-blur-sm">
+                        <input id="input001"
+                            class=" w-52 h-7 text-white focus:outline-none bg-opacity-10 backdrop-blur-sm bg-gray-600 "
+                            type="text" value="" placeholder=" Try typing..." />
+                    </div>
+                </div>
+
+                <div id="child15" class="flex mt-3 ml-2 mr-2 justify-between">
+                    <div id="child151" class="flex justify-start items-center gap-4 h-8 w-56">
+                        <i class="fas fa-plus icon"></i>
+                        <button id="btn1" type="button">New List</button>
+                    </div>
+                    <div id="child152" class="mr-1 flex justify-center items-center h-8">
+                        <i class="fa-brands fa-slack"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="child2" style="background-image: url('BG/bg05.jpg');"
+            class="child2 h-screen w-full bg-blue-500 rounded-l-lg mt-8 ml-1">
+        
+            <div id="child21" class="flex justify-between mt-9 mr-10 gap-6 h-[60px]">
+                <div id="date" class="">
+                    <div id="date01" class="block">
+                        <div class="flex flex-col ml-8 justify-center">
+
+                            <h1 id="header01" class="text-3xl font-bold ">My Day</h1>
+                            <h1 id="header02">Tuesday, 10 December</h1>
+                        </div>
+                    </div>
+
+                    <div id="date02" class="hidden">
+                        <div class="flex justify-center ml-8 gap-3">
+                            <i id="icon01" class="fas fa-star icon text-3xl "></i>
+                            <h1 id="header01" class="text-3xl font-bold">Important</h1>
+                        </div>
+                    </div>
+                    <div id="date03" class="hidden">
+                        <div class="flex justify-center ml-8 gap-3">
+                            <i id="icon01" class="fas fa-user icon text-3xl"></i>
+                            <h1 id="header01" class="text-3xl font-bold">Assigned to me</h1>
+                        </div>
+                    </div>
+                    <div id="date04" class="hidden">
+                        <div class="flex justify-center  ml-8 gap-3">
+                            <i id="icon01" class="fas fa-home icon text-3xl"></i>
+                            <h1 id="header01" class="text-3xl font-bold">Task</h1>
+                        </div>
+                    </div>
+                    <div id="date05" class="hidden">
+                        <div class="flex justify-center ml-8 gap-3">
+                            <i id="icon01" class="fa-solid fa-check text-3xl"></i>
+                            <h1 id="header01" class="text-3xl font-bold">Completed Task</h1>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="flex gap-6">
+                    <div class="mr-2">
+                        <i id="toggle" class="fas fa-moon text-white"></i>
+                    </div>
+                    <div id="rocket1" class="w-7 h-7">
+                        <i id="rocket" class="fas fa-rocket icon"></i>
+                    </div>
+                    <div id="display">
+                        <i id="display1" class="fas fa-bars icon"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="relative">
+
+                <div id="list0310" class="block">
+                    <div id="list03" class="w-full h-[490px] mt-5 flex flex-col gap-2 items-center overflow-y-auto">
+                        <!-- my day -->
+                    </div>
+                </div>
+                <div id="list041" class="hidden">
+                    <div id="list04" class="w-full h-[490px] mt-5 flex flex-col gap-2 items-center overflow-y-auto">
+                        <!-- completed task -->
+                    </div>
+                </div>
+                <div id="list051" class="hidden">
+                    <div id="list05" class="w-full h-[490px] mt-5 flex flex-col gap-2 items-center overflow-y-auto">
+                        <!-- important -->
+                    </div>
+                </div>
+
+                <div id="list061" class="hidden">
+                    <div id="list06" class="w-full h-[490px] mt-5 flex flex-col gap-2 items-center overflow-y-auto">
+                        <!-- assigned to me  -->
+
+                    </div>
+                </div>
+
+                <div id="list071" class="hidden">
+                    <div id="list07" class="w-full h-[490px] mt-5 flex flex-col gap-2 items-center overflow-y-auto">
+                        <!-- task -->
+                    </div>
+                </div>
+
+
+
+                <div id="list01" class="absolute top-0 right-0 z-10 flex justify-end">
+                    <div id="child22" class="flex justify-end rounded-sm">
+                        <div id="child221"
+                            class=" rounded-sm h-72 w-64 grid grid-cols-4 bg-gray-700 gap-2 p-1 bg-opacity-20 backdrop-blur-sm">
+                            <img id="image01" class="image1" src="BG/bg01.jpg" alt="" />
+                            <img id="image02" class="image1" src="BG/bg02.jpg" alt="" />
+                            <img id="image03" class="image1" src="BG/bg03.jpg" alt="" />
+                            <img id="image04" class="image1" src="BG/bg04.jpg" alt="" />
+                            <img id="image05" class="image1" src="BG/bg05.jpg" alt="" />
+                            <img id="image06" class="image1" src="BG/bg06.jpg" alt="" />
+                            <img id="image07" class="image1" src="BG/bg07.jpg" alt="" />
+                            <img id="image08" class="image1" src="BG/bg08.jpg" alt="" />
+                            <img id="image09" class="image1" src="BG/bg09.jpg" alt="" />
+                            <img id="image10" class="image1" src="BG/bg20.jpg" alt="" />
+                            <img id="image11" class="image1" src="BG/bg11.jpg" alt="" />
+                            <img id="image12" class="image1" src="BG/bg12.jpg" alt="" />
+                            <img id="image13" class="image1" src="BG/bg13.jpg" alt="" />
+                            <img id="image14" class="image1" src="BG/bg14.jpg" alt="" />
+                            <img id="image15" class="image1" src="BG/bg15.jpg" alt="" />
+                            <img id="image16" class="image1" src="BG/bg16.jpg" alt="" />
+                            <img id="image17" class="image1" src="BG/bg17.jpg" alt="" />
+                            <img id="image18" class="image1" src="BG/bg18.jpg" alt="" />
+                            <img id="image19" class="image1" src="BG/bg19.jpg" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flex justify-center items-center mt-5 rounded-md  ">
+                <div class="relative w-[1100px] h-10  rounded-md backdrop-blur-sm bg-opacity-20 bg-black">
+                    <i class="fa-regular fa-circle absolute z-20 left-4 top-1 text-2xl"></i>
+                    <div class="flex justify-end items-end  backdrop-blur-sm rounded-md ">
+                        <input id="inputtext"
+                            class="w-[1050px] h-10  rounded-md text-white focus:outline-none bg-opacity-0 opacity-60 backdrop-blur-sm bg-black "
+                            type="text" value="" placeholder="Add a task, conquer the day!" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="ToDoList01.js" defer></script>
+</body>
+
+</html>
