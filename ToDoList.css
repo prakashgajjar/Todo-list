@@ -80,12 +80,12 @@ body{
 /* animations of assigned text */
 
 #assignedh10 , #assignedh11 ,#assignedh12{
-  animation: moveRight 1.5s ease-in;
+  animation: zoomtext 1.5s ease-in;
 }
 
 
 
-@keyframes moveRight {
+@keyframes zoomtext {
   0% {
     font-size: 0;
   }

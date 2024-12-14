@@ -24,6 +24,7 @@ const list05 = document.getElementById('list05')
 const list051 = document.getElementById('list051')
 const list061 = document.getElementById('list061')
 const list071 = document.getElementById('list071')
+const list07 = document.getElementById('list07')
 
 const image01 = document.getElementById('image01')
 const image02 = document.getElementById('image02')
@@ -44,8 +45,15 @@ const image16 = document.getElementById('image16')
 const image17 = document.getElementById('image17')
 const image18 = document.getElementById('image18')
 const image19 = document.getElementById('image19')
+let counter =0;
 const date = document.getElementById('date')
 const hr = document.getElementById('hr')
+
+const today = new Date();
+
+const options = { year: 'numeric', month: 'long', day: 'numeric' };
+const formattedDate = today.toLocaleDateString('en-US', options);
+header02.innerText = formattedDate;
 
 image01.addEventListener('click', function () {
   child2.style.backgroundImage = "url('BG/bg01.jpg')"
@@ -166,6 +174,7 @@ displayButton.addEventListener('click', () => {
 });
 
 
+
 inputmain.addEventListener('keydown', (e) => {
   if (e.key === 'Enter') {
     const inputvalue = inputmain.value;
@@ -195,6 +204,9 @@ inputmain.addEventListener('keydown', (e) => {
       else if(list051.className == 'block'){
         list05.appendChild(newdiv)
       }
+      else if(list071.className == 'block'){
+        list07.appendChild(newdiv)
+      }
 
 
       inputmain.value = '';
@@ -210,6 +222,10 @@ inputmain.addEventListener('keydown', (e) => {
         else if(list051.className == 'block'){
           list05.prepend(tempdiv);
         }
+        else if(list071.className == 'block'){
+          list07.prepend(tempdiv);
+        }
+     
       })
 
   
@@ -344,9 +360,10 @@ text03.addEventListener('click', () => {
   list051.className = 'hidden'
   list061.className = 'block'
   list071.className = 'hidden'
-
+  ++counter;
   newinput01.className = 'hidden'
 
+  if(counter == 1){
   setTimeout(()=>{
   assignedh10.classList.replace('hidden','block')
   },500)
@@ -362,8 +379,9 @@ text03.addEventListener('click', () => {
   },3500)
   setTimeout(()=>{
     assignedh12.classList.replace('block','hidden')
+    counter =0;
   },5000)
-  
+}
   // setTimeout(()=>{
     
   //   assignedh10.classList.replace('hidden','block')
