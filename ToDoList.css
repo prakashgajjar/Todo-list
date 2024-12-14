@@ -66,6 +66,30 @@ body{
 }
 #child1{
   background-color: #202224;
+
+}
+
+#middiv01{
+  background-image: url('BG/bg24.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  
 }
 
 
+/* animations of assigned text */
+
+#assignedh10 , #assignedh11 ,#assignedh12{
+  animation: moveRight 1.5s ease-in;
+}
+
+
+
+@keyframes moveRight {
+  0% {
+    font-size: 0;
+  }
+  100% {
+   font-size: 50px;
+  }
+}

@@ -268,6 +268,14 @@ input001.addEventListener('keydown', (e) => {
     }
   }
 });
+
+const newdisplay01 = document.getElementById('newinpput01')
+// const middiv = document.getElementById('middiv01')
+// middiv.style.backgroundImage = "url('BG/bg26.jpg')"
+const assignedh10 = document.getElementById('assignedh10')
+const assignedh11 = document.getElementById('assignedh11')
+const assignedh12 = document.getElementById('assignedh12')
+
 text01.addEventListener('click', () => {
 
   date01.className = 'block';
@@ -289,6 +297,8 @@ text01.addEventListener('click', () => {
   text04.classList.remove('bg-gray-700')
   text05.classList.remove('bg-gray-700')
   text02.classList.remove('bg-gray-700')
+
+  newinput01.className = 'block'
 })
 
 text02.addEventListener('click', () => {
@@ -312,6 +322,8 @@ text02.addEventListener('click', () => {
   text05.classList.remove('bg-gray-700')
   text02.classList.add('bg-gray-700')
 
+  newinput01.className = 'block'
+
 })
 
 text03.addEventListener('click', () => {
@@ -333,7 +345,32 @@ text03.addEventListener('click', () => {
   list061.className = 'block'
   list071.className = 'hidden'
 
+  newinput01.className = 'hidden'
+
+  setTimeout(()=>{
+  assignedh10.classList.replace('hidden','block')
+  },500)
+  setTimeout(()=>{
+  assignedh10.classList.replace('block','hidden')
+  assignedh11.classList.replace('hidden','block')
+  },2000)
+  setTimeout(()=>{
+  assignedh10.classList.replace('block','hidden')
+  assignedh11.classList.replace('block','hidden')
+  assignedh12.classList.replace('hidden','block')
+
+  },3500)
+  setTimeout(()=>{
+    assignedh12.classList.replace('block','hidden')
+  },5000)
   
+  // setTimeout(()=>{
+    
+  //   assignedh10.classList.replace('hidden','block')
+  //   assignedh11.classList.replace('hidden','block')
+  //   assignedh12.classList.replace('hidden','block')
+  //   },5000)
+
 })
 text04.addEventListener('click', () => {
 
@@ -353,6 +390,8 @@ text04.addEventListener('click', () => {
   list051.className = 'hidden'
   list061.className = 'hidden'
   list071.className = 'block'
+
+  newinput01.className = 'block'
   
 })
 text05.addEventListener('click', () => {
@@ -374,10 +413,12 @@ text05.addEventListener('click', () => {
   text04.classList.remove('bg-gray-700')
   text05.classList.add('bg-gray-700')
 
+  newinput01.className = 'block'
+
 })
 const child11 = document.getElementById('child11')
 
 body.addEventListener('click',()=>child11.classList.remove('border-2'))
 
 
-//now all write for suggetions clicks
+
